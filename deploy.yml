@@ -31,7 +31,7 @@
      name: tomcat
      state: started
   - name: Stop Tomcat
-    shell: /root/apache-tomcat-8.5.51/bin/shutdown.sh
+    shell: /root/apache-tomcat-8.5.51/bin/shutdown.sh  /etc/init.d/tomcatstop
   - name: Clean the existing war file
     file:
       path: /root/apache-tomcat-8.5.51/webapps/gameoflife.war
