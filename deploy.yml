@@ -1,7 +1,7 @@
 ---
 - hosts: webservers
   become: true
-   tasks:
+  tasks:
   - name: Install Java
     command: yum install java-1.8.0-openjdk -y
     command: yum install java-1.8.0-openjdk-devel -y
