@@ -22,10 +22,6 @@
       - tomcat-docs-webapp
       - tomcat-javadoc
      state: present
-  - name: Copy file
-    copy:
-     src: /home/ansible/tomcat-users.xml
-     dest: /usr/share/tomcat/conf/tomcat-users.xml
   - name: enable service tomcat
     systemd:
      name: tomcat
