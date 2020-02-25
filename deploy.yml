@@ -10,7 +10,7 @@
      line: 'export JRE_HOME=/usr/lib/jvm/jre'
   - lineinfile:
      path: /etc/profile
-     line: 'eexport JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk'
+     line: 'export JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk'
   - name: ensure a list of packages installed
     yum:
      name: "{{ packages }}"
@@ -22,7 +22,7 @@
       - tomcat-docs-webapp
       - tomcat-javadoc
      state: present
-  - name: Copy fil
+  - name: Copy file
     copy:
      src: /home/ansible/tomcat-users.xml
      dest: /usr/share/tomcat/conf/tomcat-users.xml
