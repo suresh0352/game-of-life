@@ -30,7 +30,7 @@
     systemd:
      name: tomcat
      state: started
-      - name: Stop Tomcat
+  - name: Stop Tomcat
     service: name=tomcat state=stopped
   - name: Check that war file exist
     stat:
