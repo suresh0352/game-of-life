@@ -56,9 +56,9 @@
        dest: /usr/share/tomcat/webapps/gameoflife.war
   - name: Start Tomcat
     service: name=tomcat state=started
-  - name: conf/tomcat-users.xml
-    <role rolename="manager-gui"/>
-    <user username="admin" password="admin" roles="manager-gui"/>
+  //- name: conf/tomcat-users.xml
+    //<role rolename="manager-gui"/>
+    //<user username="admin" password="admin" roles="manager-gui"/>
   
 
  
